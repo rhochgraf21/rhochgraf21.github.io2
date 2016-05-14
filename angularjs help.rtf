@@ -1,0 +1,736 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid301\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid501\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid6}
+{\list\listtemplateid7\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid601\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid7}
+{\list\listtemplateid8\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid701\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid8}
+{\list\listtemplateid9\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid801\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid9}
+{\list\listtemplateid10\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid901\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid10}
+{\list\listtemplateid11\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1001\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid11}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}{\listoverride\listid7\listoverridecount0\ls7}{\listoverride\listid8\listoverridecount0\ls8}{\listoverride\listid9\listoverridecount0\ls9}{\listoverride\listid10\listoverridecount0\ls10}{\listoverride\listid11\listoverridecount0\ls11}}
+\margl1440\margr1440\vieww10800\viewh14060\viewkind0
+\deftab720
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0
+\f0\fs24 \cf0 {\listtext	1.	}
+\fs48 Normal Creation Steps
+\fs24 \
+{\listtext	2.	}1.	In 
+\b app.js
+\b0 , we created a new 
+\i module
+\i0  named 
+\f1 MyApp
+\f0 . A 
+\i module
+\i0  contains the different components of an AngularJS app.\
+{\listtext	3.	}Then, in 
+\b index.html
+\b0  we added 
+\f1 <body ng-app="myApp">
+\f0 . The 
+\f1 ng-app
+\f0  is called a 
+\i directive
+\i0 . It tells AngularJS that the 
+\f1 MyApp
+\f0  module will live within the 
+\f1 <body>
+\f0  element, termed the application's 
+\i scope
+\i0 . In other words, we used the 
+\f1 ng-app
+\f0  directive to define the application scope.\
+{\listtext	4.	}In 
+\b MainController.js
+\b0  we created a new 
+\i controller
+\i0  named 
+\f1 MainController
+\f0 . A 
+\i controller
+\i0  manages the app's data. Here we use the property 
+\f1 title
+\f0  to store a string, and attach it to 
+\f1 $scope
+\f0 .\
+{\listtext	5.	}Then, in 
+\b index.html
+\b0 , we added 
+\f1 <div class="main" ng-controller="MainController">
+\f0 . Like 
+\f1 ng-app
+\f0 , 
+\f1 ng-controller
+\f0  is a 
+\i directive
+\i0  that defines the controller scope. This means that properties attached to 
+\f1 $scope
+\f0  in 
+\f1 MainController
+\f0  become available to use within 
+\f1 <div class="main">
+\f0 .\
+{\listtext	6.	}Inside 
+\f1 <div class="main">
+\f0  we accessed 
+\f1 $scope.title
+\f0  using 
+\f1 \{\{ title \}\}
+\f0 . This is called an 
+\i expression
+\i0 . Expressions are used to display values on the page.\
+{\listtext	7.	}The value of 
+\f1 title
+\f0  showed up when we viewed the app in the browser.\
+\pard\tx720\pardeftab720
+\cf0 \
+\
+
+\fs48 \
+		
+\b Typical workflow:
+\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0\cf0 {\listtext	1.	}Create a module, and use 
+\f1 ng-app
+\f0  in the view to define the application scope.\
+{\listtext	2.	}Create a controller, and use 
+\f1 ng-controller
+\f0  in the view to define the controller scope.\
+{\listtext	3.	}Add data to 
+\f1 $scope
+\f0  in the controller so they can be displayed with expressions in the view.\
+\pard\tx720\pardeftab720
+
+\fs24 \cf0 \
+\
+\pard\pardeftab720\sa240
+\cf0 \
+
+\b\fs48 Filters
+\b0\fs24 \
+Great! The product price changed from a number to a formatted currency. How does it work?\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls3\ilvl0\cf0 {\listtext	1.	}AngularJS gets the value of 
+\f1 product.price
+\f0 .\
+{\listtext	2.	}It sends this number into the 
+\f1 currency
+\f0  filter. The pipe symbol (
+\f1 |
+\f0 ) takes the output on the left and "pipes" it to the right.\
+{\listtext	3.	}The filter outputs a formatted currency with the dollar sign and the correct decimal places.\
+\pard\tx720\pardeftab720
+\cf0 \
+\
+
+\b\fs48 Likes Button:\
+\pard\pardeftab720\sa240
+
+\b0\fs24 \cf0 1.\
+In the controller in the 
+\f1 $scope.products
+\f0  array, add a new property named 
+\f1 likes
+\f0  to each element. Set all 
+\f1 likes
+\f0  properties to 
+\f1 0
+\f0 .\
+\pard\pardeftab720
+\cf0 \
+\pard\pardeftab720
+
+\b \cf0 2.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 In the view under 
+\f1 <p class="date">
+\f0 , type in a rating element:\
+\pard\pardeftab720
+
+\f1 \cf0 <div class="rating"> \
+  <p class="likes">+ </p> \
+</div>\
+\pard\pardeftab720\sa240
+
+\f0 \cf0 Inside 
+\f1 <p class="likes">
+\f0 , display a product's 
+\f1 likes
+\f0  using an expression.\
+\pard\pardeftab720
+\cf0 \
+\pard\pardeftab720
+
+\b \cf0 3.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 Back in the controller after 
+\f1 $scope.products
+\f0 , attach a new property to 
+\f1 $scope
+\f0  named 
+\f1 plusOne
+\f0 . Set it equal to function. Type in the contents exactly as you see here:\
+\pard\pardeftab720
+
+\f1 \cf0 function(index) \{ \
+  $scope.products[index].likes += 1; \
+\};\
+\pard\pardeftab720
+
+\f0 \cf0 \
+\pard\pardeftab720
+
+\b \cf0 4.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 In the view modify 
+\f1 <p class="likes">
+\f0  to look like this:\
+\pard\pardeftab720
+
+\f1 \cf0 <p class="likes" ng-click="plusOne($index)">\
+\pard\pardeftab720\sa240
+
+\f0 \cf0 View the AngularJS app in the browser. Click on the +0 in each product tile.\
+\pard\tx720\pardeftab720
+
+\b\fs28 \cf0 How it works: 
+\b0\fs24 	\
+1.	The 
+\f1 ng-click
+\f0  is a directive. When 
+\f1 <p class="likes">
+\f0  is clicked, 
+\f1 ng-click
+\f0  tells AngularJS to run the 
+\f1 plusOne()
+\f0  function in the controller.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0\cf0 {\listtext	2.	}The 
+\f1 plusOne()
+\f0  function gets the index of the product that was clicked, and then adds one to that product's 
+\f1 likes
+\f0  property.\
+\pard\pardeftab720\sa240
+\cf0 Notice that the 
+\f1 plusOne()
+\f0  doesn't interact with the view at all; it just updates the controller. Any change made to the controller shows up in the view.\
+\
+
+\b\fs48 AngularJS app #2\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls5\ilvl0
+\b0\fs24 \cf0 {\listtext	\'95	}In the controller 
+\b MainController.js
+\b0 , there are three objects 
+\f1 $scope.move
+\f0 , 
+\f1 $scope.shutterbugg
+\f0 , and 
+\f1 $scope.gameboard
+\f0  that each contain info about an app, like its title and price.\
+{\listtext	\'95	}In the view 
+\b index.html
+\b0  in the 
+\f1 .main
+\f0  section, each app is displayed inside a 
+\f1 .card
+\f0  div.\
+\pard\pardeftab720\sa240
+
+\b\fs36 \cf0 Code:
+\b0\fs24 \
+$scope.move = \{\
+    icon: 'img/move.jpg',\
+    title: 'MOVE',\
+    developer: 'MOVE, Inc.',\
+    price: 0.99\
+  \};\
+\
+  $scope.shutterbugg = \{\
+    icon: 'img/shutterbugg.jpg',\
+    title: 'Shutterbugg',\
+    developer: 'Chico Dusty',\
+    price: 2.99\
+  \};\
+\
+  $scope.gameboard = \{\
+    icon: 'img/gameboard.jpg',\
+    title: 'Gameboard',\
+    developer: 'Armando P.',\
+    price: 1.99\
+  \};\
+\pard\tx720\pardeftab720
+
+\b\fs48 \cf0 \
+Create Directive (like <p> tag)\
+\
+\pard\pardeftab720\sa240
+
+\b0\fs24 \cf0 What did we just do? We wrote code to teach the browser a new HTML element 
+\f1 <app-info>
+\f0 , and used it in the view to display each app's details.\
+First in 
+\b js/directives/appInfo.js
+\b0 , we made a new 
+\i directive
+\i0 . We used 
+\f1 app.directive
+\f0  to create a new directive named 
+\f1 'appInfo'
+\f0 . It returns an object with three options:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls6\ilvl0
+\f1 \cf0 {\listtext	1.	}restrict
+\f0  specifies how the directive will be used in the view. The 
+\f1 'E'
+\f0  means it will be used as a new HTML element.\
+\ls6\ilvl0
+\f1 {\listtext	2.	}scope
+\f0  specifies that we will pass information into this directive through an attribute named 
+\f1 info
+\f0 . The 
+\f1 =
+\f0  tells the directive to look for an attribute named 
+\f1 info
+\f0  in the 
+\f1 <app-info>
+\f0  element, like this:
+\f1  <app-info info="shutterbugg"></app-info>\
+{\listtext	3.	}\uc0\u8232 
+\f0 The data in 
+\f1 info
+\f0  becomes available to use in the template given by 
+\f1 templateURL
+\f0 .\
+\ls6\ilvl0
+\f1 {\listtext	4.	}templateUrl
+\f0  specifies the HTML to use in order to display the data in 
+\f1 scope.info
+\f0 . Here we use the HTML in 
+\b js/directives/appInfo.html
+\b0 .\
+\pard\pardeftab720\sa240
+\cf0 Looking at 
+\b js/directives/appInfo.html
+\b0 , we define the HTML to display details about an app, like its title and price. We use expressions and filters to display the data.\
+Then in 
+\b index.html
+\b0  we use the new directive as the HTML element 
+\f1 <app-info>
+\f0 . We pass in objects from the controller's scope (
+\f1 $scope.shutterbugg
+\f0 ) into the 
+\f1 <app-info>
+\f0  element's 
+\f1 info
+\f0  attribute so that it displays.\
+\pard\pardeftab720\sa240
+
+\fs56 \cf0 Use NG-Repeat\
+\pard\pardeftab720
+
+\f1\fs24 \cf0 <div ng-repeat="product in products">\
+  <img ng-src="\{\{ product.cover \}\}">\
+  <p class="title">\{\{ product.name \}\}</p>\
+</div>\
+\pard\pardeftab720\sa240
+
+\f0 \cf0 \
+\'85It\'92s basically a for each loop\
+<div class="card" ng-repeat="app in apps">\
+          <app-info info="app"></app-info>\
+\'85Create a class called card\
+\'85.Use ng-repeat to loop through app\'92s info (developer, title, etc.) \
+\'85App info displays the data\
+\
+\pard\pardeftab720\sa240
+
+\fs56 \cf0 Create Directive Part 2\
+\pard\pardeftab720\sa240
+
+\fs24 \cf0 app.directive('installApp', function() \{\
+	return \{\
+  restrict: 'E',\
+  scope: \{\},\
+  templateUrl:'js/directives/installApp.html' \
+\}\});\
+\
+\pard\pardeftab720\sa240
+
+\fs36 \cf0 We used 
+\f1 app.directive
+\f0  to create a new directive named 
+\f1 'installApp'
+\f0 .\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls7\ilvl0\cf0 {\listtext	\'95	}The directive contains the three options 
+\f1 restrict
+\f0 , 
+\f1 scope
+\f0 , and 
+\f1 templateUrl
+\f0  that we saw before in the 
+\f1 'appInfo'
+\f0  directive.\
+{\listtext	\'95	}It also contains a fourth option 
+\f1 link
+\f0 . The 
+\f1 link
+\f0  is used to create interactive directives that respond to user actions.\
+\pard\pardeftab720\sa240
+\cf0 The link function takes three inputs:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls8\ilvl0
+\f1 \cf0 {\listtext	1.	}scope
+\f0  refers to the directive's scope. Any new properties attached to 
+\f1 $scope
+\f0  will become available to use in the directive's template.\
+\ls8\ilvl0
+\f1 {\listtext	2.	}element
+\f0  refers to the directive's HTML element.\
+\ls8\ilvl0
+\f1 {\listtext	3.	}attrs
+\f0  contains the element's attributes.\
+\pard\pardeftab720\sa240
+\cf0 Inside the 
+\f1 link
+\f0  function, there are two properties 
+\f1 buttonText
+\f0  and 
+\f1 installed
+\f0 , and the function 
+\f1 download()
+\f0 . We'll use these in the directive's template next.\
+Code:
+\fs24 \
+\
+app.directive('installApp', function() \{\
+  return \{\
+    restrict: 'E',\
+    scope: \{\},\
+    templateUrl: 'js/directives/installApp.html',\
+    \
+    link: function(scope, element, attrs) \{\
+      scope.buttonText = "Install",\
+      scope.installed = false,\
+\
+      scope.download = function() \{\
+        element.toggleClass('btn-active')\
+        if(scope.installed) \{\
+          scope.buttonText = "Install";\
+          scope.installed = false;\
+        \} else \{\
+          scope.buttonText = "Uninstall";\
+          scope.installed = true;\
+        \}\
+      \}\
+    \}\
+  \};\
+\});11\
+\
+\pard\pardeftab720\sa240
+
+\fs48 \cf0 Getting data from a server\
+\pard\pardeftab720\sa240
+
+\fs24 \cf0 Create a service named 
+\f1 forecast
+\f0  that fetches the weather data from the server. In the new file 
+\b js/services/forecast.js
+\b0 . Type in this code exactly as you see here:\
+\pard\pardeftab720
+
+\f1 \cf0 app.factory('forecast', ['$http', function($http) \{ \
+  return $http.get('https://s3.amazonaws.com/codecademy-content/courses/ltp4/forecast-api/forecast.json') \
+            .success(function(data) \{ \
+              return data; \
+            \}) \
+            .error(function(err) \{ \
+              return err; \
+            \}); \
+\}]);\
+\pard\pardeftab720\sa240
+
+\f0 \cf0 \
+In the controller, modify 
+\f1 MainController
+\f0  by passing in the 
+\f1 forecast
+\f0  service, like this:\
+\pard\pardeftab720
+
+\f1 \cf0 app.controller('MainController', ['$scope', 'forecast', function($scope, forecast) \{ \
+  // ... \
+\}]);\
+\pard\pardeftab720
+
+\f0 \cf0 \
+\pard\pardeftab720\sa240
+\cf0 Inside 
+\f1 MainController
+\f0 , use the 
+\f1 forecast
+\f0  service to save the weather data into 
+\f1 $scope.fiveDay
+\f0 , like this:\
+\pard\pardeftab720
+
+\f1 \cf0   forecast.success(function(data) \{ \
+    $scope.fiveDay = data; \
+  \});\
+\pard\pardeftab720\sa240
+
+\f0\fs48 \cf0 \
+\pard\pardeftab720\sa240
+
+\fs24 \cf0 Well done! The 
+\f1 city_name
+\f0  now shows up in the view. How does it work?\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls9\ilvl0\cf0 {\listtext	1.	}First in 
+\b js/services/forecast.js
+\b0 , we made a new 
+\i service
+\i0 . We used 
+\f1 app.factory
+\f0  to create a new service named 
+\f1 forecast
+\f0 \
+{\listtext	2.	}The 
+\f1 forecast
+\f0  service needs to use AngularJS's built-in 
+\f1 $http
+\f0  to fetch JSON from the server. Therefore, we add 
+\f1 $http
+\f0  to the 
+\f1 forecast
+\f0  service as a dependency, like this:
+\f1  ['$http', function($http) \{\
+{\listtext	3.	}   // ...\
+{\listtext	4.	} \}]\
+{\listtext	5.	}\uc0\u8232 
+\f0 Now 
+\f1 $http
+\f0  is available to use inside 
+\f1 forecast
+\f0 .\
+{\listtext	6.	}Then, inside 
+\f1 forecast
+\f0 , we use 
+\f1 $http
+\f0  to construct an HTTP 
+\f1 GET
+\f0  request for the weather data. If the request succeeds, the weather data is returned; otherwise the error info is returned.\
+{\listtext	7.	}Next in the controller, we used the 
+\f1 forecast
+\f0  service to fetch data from the server. First we added 
+\f1 forecast
+\f0  into 
+\f1 MainController
+\f0  as a dependency so that it's available to use. Then within the controller we used 
+\f1 forecast
+\f0  to asynchronously fetch the weather data from the server and store it into 
+\f1 $scope.fiveDay
+\f0 \
+{\listtext	8.	}As before, any properties attached to 
+\f1 $scope
+\f0  become available to use in the view. This means in 
+\b index.html
+\b0 , we can display the 
+\f1 city_name
+\f0  using an expression as done before.\
+\pard\tx720\pardeftab720
+
+\fs48 \cf0 Routing\
+\pard\pardeftab720\sa240
+
+\fs24 \cf0 So far we've made AngularJS apps that display data in a single view 
+\b index.html
+\b0 .\
+But what happens when the app grows and needs to display more information? Stuffing more code to a single view will quickly make things messy.\
+A better solution is to use multiple templates that display different pieces of data based on the URL that the user is visiting. We can do this with Angular's 
+\i application routes
+\i0 .\
+\pard\pardeftab720
+\cf0 \
+
+\b 1.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 In 
+\b index.html
+\b0  under the 
+\f1 .header
+\f0  section, type in the code exactly as you see here:\
+\pard\pardeftab720
+
+\f1 \cf0 <div ng-view></div>\
+\pard\pardeftab720
+
+\f0 \cf0 \
+
+\b 2.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 View the AngularJS app in the browser by typing {\field{\*\fldinst{HYPERLINK "http://localhost:8000/"}}{\fldrslt \cf2 \ul \ulc2 http://localhost:8000/}}.\
+\pard\pardeftab720
+\cf0 \
+
+\b 3.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 In 
+\b app.js
+\b0  under the 
+\f1 angular.module
+\f0 , type in this code:\
+\pard\pardeftab720
+
+\f1 \cf0 app.config(function ($routeProvider) \{ \
+  $routeProvider \
+    .when('/', \{ \
+      controller: 'HomeController', \
+      templateUrl: 'views/home.html' \
+    \}) \
+    .otherwise(\{ \
+      redirectTo: '/' \
+    \}); \
+\});\
+\pard\pardeftab720
+
+\f0 \cf0 \
+\pard\pardeftab720\sa240
+\cf0 Great! A gallery of images shows up. How does it work?\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls10\ilvl0\cf0 {\listtext	1.	}In 
+\b app.js
+\b0  inside the 
+\f1 app.config()
+\f0  method, we use Angular's 
+\f1 $routeProvider
+\f0  to define the application routes.\
+{\listtext	2.	}We used 
+\f1 .when()
+\f0  to map the URL 
+\f1 /
+\f0  to to the controller 
+\f1 HomeController
+\f0  and the template 
+\f1 home.html
+\f0 . The 
+\f1 HomeController
+\f0  uses the service 
+\b js/services/photos.js
+\b0  to fetch the array of all photos from {\field{\*\fldinst{HYPERLINK "https://s3.amazonaws.com/codecademy-content/courses/ltp4/photos-api/photos.json"}}{\fldrslt \cf2 \ul \ulc2 https://s3.amazonaws.com/codecademy-content/courses/ltp4/photos-api/photos.json}} and stores it into 
+\f1 $scope.photos
+\f0 . The 
+\f1 home.html
+\f0  uses 
+\f1 ng-repeat
+\f0  to loop through each item in the 
+\f1 photos
+\f0  array and display each photo.\
+{\listtext	3.	}Otherwise if a user accidentally visits a URL other than 
+\f1 /
+\f0 , we just redirect to 
+\f1 /
+\f0  using 
+\f1 .otherwise()
+\f0 .\
+{\listtext	4.	}Now when a user visits 
+\f1 /
+\f0 , a view will be constructed by injecting 
+\f1 home.html
+\f0  into the 
+\f1 <div ng-view></div>
+\f0  in 
+\b index.html
+\b0 .\
+\pard\pardeftab720
+\cf0 \
+
+\b 1.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 In 
+\b app.js
+\b0  between the 
+\f1 .when()
+\f0  and 
+\f1 .otherwise()
+\f0 , add another 
+\f1 .when()
+\f0  that maps the URL 
+\f1 /photos/:id
+\f0  to the controller 
+\f1 PhotoController
+\f0  and the template 
+\b views/photo.html
+\b0 .\
+\pard\pardeftab720
+\cf0 \
+
+\b 2.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 Visit {\field{\*\fldinst{HYPERLINK "http://localhost:8000/"}}{\fldrslt \cf2 \ul \ulc2 http://localhost:8000/}} and click on a photo. A detail page about that photo should appear.\
+What did we just do?\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls11\ilvl0\cf0 {\listtext	1.	}In 
+\b app.js
+\b0 , we mapped a URL to 
+\f1 PhotoController
+\f0  and 
+\f1 photo.html
+\f0 . We added a variable part named 
+\f1 id
+\f0  to the URL, like this: 
+\f1 /photos/:id
+\f0 .\
+{\listtext	2.	}In 
+\b PhotoController
+\b0 , we used Angular's 
+\f1 $routeParams
+\f0  to retrieve 
+\f1 id
+\f0  from the URL by using 
+\f1 $routeParams.id
+\f0 . Notice that we injected both 
+\f1 $routeParams
+\f0  and the 
+\f1 photos
+\f0  service into the 
+\f1 PhotoController
+\f0  dependency array to make them available to use inside the controller.\
+{\listtext	3.	}Then to fetch an individual photo, we first used the 
+\f1 photos
+\f0  service to fetch the array of photos from the server, and then used 
+\f1 $routeParams.id
+\f0  to access the specific photo by its index.\
+{\listtext	4.	}As before, any properties attached to 
+\f1 $scope
+\f0  become available to use in the view. This means in 
+\b photo.html
+\b0 , we can display the photo's 
+\f1 detail
+\f0  using expressions as done before.\
+\pard\pardeftab720\sa240
+\cf0 Notice that when you click on links, the app doesn't do a full reload. Only the part of the view specified by 
+\f1 <div ng-view></div>
+\f0  changes\
+\pard\pardeftab720
+\cf0 \
+\
+\pard\tx720\pardeftab720
+\cf0 \
+}

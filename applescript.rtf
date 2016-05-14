@@ -1,0 +1,70 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\b\fs24 \cf0 Applescript\
+\
+tell
+\b0  application "Finder" 
+\b to
+\b0  close 
+\b every
+\b0  window\
+\
+\
+\
+A script to open the hard drive that contains the currently running System folder.\
+\'a0\
+\
+
+\b tell
+\b0  application "Finder" 
+\b to
+\b0  open 
+\b the
+\b0  startup disk\
+\
+\pard\pardeftab720
+
+\b\fs28 \cf0 NAME
+\b0\fs24 \
+\
+To retrieve the value of the name property of a window, we\'92ll use the command \'93get.\'94 This verb is used when we want to extract information or data from a scriptable element or object.\
+\
+\pard\pardeftab720
+
+\b \cf0 tell
+\b0  application "Finder" 
+\b to get the
+\b0  name 
+\b of front
+\b0  Finder window\
+\
+\pard\pardeftab720
+
+\b\fs28 \cf0 INDEX\
+\
+\pard\pardeftab720\sa240
+
+\b0\fs24 \cf0 The value of this read-only property is a number corresponding to the window\'92s layer position in the stacking order of open Finder windows. On the computer, no two windows can occupy the same layer. One window is always on top of or in front of another window. The index property reflects this fact.\
+For example, the front Finder window will always have an index value of \'931,\'94 since it is the first window in the stack of open window, while the last Finder window will always have an index value equal to the number of open Finder windows.\
+\pard\pardeftab720
+\cf0 \
+\
+A script that creates a new Finder window displaying the contents of the startup disk.\
+\'a0\
+\
+\pard\pardeftab720
+
+\b \cf0 tell
+\b0  application "Finder" 
+\b to
+\b0  open 
+\b the
+\b0  startup disk\
+\pard\pardeftab720\sa240
+\cf0 \
+}
