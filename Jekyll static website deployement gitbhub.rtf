@@ -1,0 +1,304 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;\red0\green0\blue233;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid1\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid301\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid401\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs42 \cf0 Jekyll: Static websites and command line\
+\
+\
+Install Jekyll\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	
+\fs30 \uc0\u8259 	}
+\fs42 gem install jekyll\
+Generating Website\
+\pard\pardeftab720\sa240
+
+\f1\fs30 \cf0 Great! Now that Jekyll is installed, let's generate your website.\
+To do so, we'll use Jekyll's 
+\f2 new
+\f1  command and specify a directory name. The directory will contain all of your site's default content that can be customized later.\
+For example, to generate a website in a directory called 
+\f2 my-portfolio-site
+\f1 , we can type:\
+\pard\pardeftab720
+
+\f2 \cf0 jekyll new my-portfolio-site\
+\pard\pardeftab720\sa240
+
+\f1 \cf0 The command will create a directory called 
+\f2 my-portfolio-site
+\f1  and fill it with Jekyll's site content.\
+Use the 
+\f2 ls
+\f1  command to verify that the directory was successfully generated.\
+\pard\pardeftab720\sa240
+
+\fs42 \cf0 Viewing Site Locally\
+\pard\pardeftab720\sa240
+
+\fs30 \cf0 Want to see what your site currently looks like? You can use Jekyll to view your site 
+\i locally
+\i0 .\
+On the web, a server hosts your site's files and makes your website available for everyone to see.\
+However, viewing a website locally means that you're viewing the site on your 
+\i own
+\i0  computer (hence the term "locally" or "local"). The site is not, however, available on the public Internet. Instead, your computer is acting as the server that hosts your site.\
+You can view your site locally by using Jekyll's 
+\f2 serve
+\f1  command, like so:\
+\pard\pardeftab720
+
+\f2 \cf0 jekyll serve\
+\pard\pardeftab720\sa240
+
+\f1 \cf0 This command starts a local server that will server the files to your computer. The 
+\f2 serve
+\f1  command will also come in handy when you want to preview changes you make to your site.\
+By default, the address for the local server that 
+\i Jekyll's
+\i0  
+\f2 serve
+\f1  command starts is 
+\f2 http://localhost:4000/
+\f1 .\
+\pard\pardeftab720
+
+\b \cf0 1.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 To view your site locally, you 
+\i must first navigate to your site's directory
+\i0 , using the 
+\f2 cd
+\f1  command.\
+Navigate to your site's directory using the 
+\f2 cd
+\f1  command. (Cd personal-website/)\
+\pard\pardeftab720
+\cf0 \
+
+\b 2.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 Next, use the jekyll 
+\f2 serve
+\f1  command to start a local server.\
+Then, navigate to {\field{\*\fldinst{HYPERLINK "http://localhost:4000/"}}{\fldrslt \cf2 \ul \ulc2 http://localhost:4000}} in the browser to view your site.\
+\pard\pardeftab720\sa240
+
+\fs42 \cf0 Jekyll\'92s generated files:\
+\pard\pardeftab720\sa240
+
+\fs28 \cf0 The website that Jekyll generates differs from a website that you'd create on your own. It offers a standard directory structure, as well as components that help speed up development.\
+It's important to understand Jekyll's default directory structure and contents of your site:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240
+\ls2\ilvl0
+\b \cf0 {\listtext	1.	}_config.yml
+\b0  - This is a configuration file that contains many values that need to be edited only once. These values are used across your site, for example, your site's title, your e-mail, and more. Note that this is a 
+\b .yml
+\b0  file, which you can learn more about {\field{\*\fldinst{HYPERLINK "http://www.yaml.org/start.html"}}{\fldrslt \cf2 \ul \ulc2 here}}.\
+\ls2\ilvl0
+\b {\listtext	2.	}_includes/
+\b0  - This directory contains all the partials (code templates that keep you from repeating your code over and over) that your site uses to load common components, like the header and the footer.\
+\ls2\ilvl0
+\b {\listtext	3.	}_posts/
+\b0  - This directory is where {\field{\*\fldinst{HYPERLINK "https://en.wikipedia.org/wiki/Blog"}}{\fldrslt \cf2 \ul \ulc2 blog posts}} are stored. New blog posts can be added and will be rendered with the site's styling, as long as the file name follows Jekyll's standard naming convention.\
+\ls2\ilvl0
+\b {\listtext	4.	}_layouts/
+\b0  - This directory contains templates that are used to style certain types of posts within the site. For example, new blog posts will use the HTML layout defined in 
+\f2 post.html
+\f1 .\
+\pard\pardeftab720\sa240
+
+\fs42 \cf0 Publishing Site to GitHub Pages:\
+\pard\pardeftab720\sa240
+
+\fs30 \cf0 In order to publish your site using GitHub Pages, you'll need to create a repository (repo) on GitHub.\
+A GitHub repository is an online, central storage place where you can store files and all the versions of those files. We'll use the repo you create to store the contents of your website.\
+Your repo's name 
+\i must
+\i0  also follow GitHub Pages' naming convention, otherwise your site will not publish at all.\
+Specifically, the repo's name must be in the following format:\
+\pard\pardeftab720
+
+\f2 \cf0 your-user-name.github.io\
+\pard\pardeftab720\sa240
+
+\f1 \cf0 In the example above, you would replace 
+\f2 your-user-name
+\f1  with your actual GitHub user name.\
+\pard\pardeftab720
+\cf0 Instructions\
+\pard\pardeftab720\sa240
+\cf0 Again, in your own browser:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls3\ilvl0\cf0 {\listtext	1.	}Create a new repo in your GitHub account and name it according to the GitHub Pages naming convention, as in the example above\
+\pard\pardeftab720\sa240
+\cf0 \
+\pard\pardeftab720\sa240
+
+\fs42 \cf0 Upload Site to Github: Using Git
+\fs24 \
+\pard\pardeftab720\sa240
+
+\fs30 \cf0 Great! Now that you've created a repo with the proper naming convention, let's upload your site to GitHub.\
+We'll use Git to push (upload) the contents of your site's directory to your new repo.\
+To do so, we'll first initalize a Git repository in your site's directory.\
+\pard\pardeftab720
+\cf0 Instructions\
+
+\b 1.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 In the terminal to the right, open a new tab.\
+Then, use the 
+\f2 cd
+\f1  command to navigate to your site's directory.\
+\pard\pardeftab720
+\cf0 \
+
+\b 2.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 Now that you're inside of your site's directory, initialize a Git repository with the following command:\
+\pard\pardeftab720
+
+\f2 \cf0 git init\
+\
+\pard\pardeftab720\sa240
+
+\f1 \cf0 Next, Git needs to know what repo will store your site's content.\
+In this case, the repo will be the one you created on GitHub earlier.\
+To specify the repo using Git, we'll have to 
+\i add
+\i0  the 
+\i remote
+\i0  and label it as the 
+\i origin
+\i0 .\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240
+\ls4\ilvl0\cf0 {\listtext	1.	}The 
+\i remote
+\i0  is the URL of the repo that will store your site's contents.\
+{\listtext	2.	}The 
+\i origin
+\i0  is an alias for the remote. You can think of an alias as an abbreviation or a substitute name. This means that instead of having to always type the lengthy remote URL over and over again, you can simply refer to it as 
+\f2 origin
+\f1  later on.\
+\pard\pardeftab720\sa240
+\cf0 In the terminal, you can add the remote with the following command:\
+\pard\pardeftab720
+
+\f2 \cf0 git remote add origin https://github.com/your-user-name/your-user-name.github.io.git\
+\pard\pardeftab720\sa240
+
+\f1 \cf0 In the example above, 
+\f2 https://github.com/your-user-name/your-user-name.github.io.git
+\f1  is the remote URL that refers to the repository you created on GitHub earlier. Again, you would replace 
+\f2 your-user-name
+\f1  with your actual GitHub username.\
+\pard\pardeftab720\sa240
+
+\b \cf0 Note:
+\b0  Make sure that your remote's URL is typed correctly. Otherwise, you risk a failed deploy.\
+\pard\pardeftab720
+\cf0 \
+
+\b 1.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 In the terminal, add the remote that points to the repository you created earlier. Use the example above to help you.\
+\pard\pardeftab720
+\cf0 \
+
+\b 2.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 Confirm that the remote was succesfully added, by typing the following:\
+\pard\pardeftab720
+
+\f2 \cf0 git remote -v\
+\pard\pardeftab720\sa240
+
+\f1 \cf0 This command lists all the Git remotes and their corresponding URLs.\
+\pard\pardeftab720\sa240
+\cf0 We're almost there! Git also needs to know exactly which files should be pushed to your repo.\
+In this case, we want to push 
+\i all
+\i0  of your site's content to the repo. This means we will do the following two things (in order):\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls5\ilvl0\cf0 {\listtext	1.	}Add all of your site's content to the Git staging area\
+{\listtext	2.	}Commit (save) your changes\
+\pard\pardeftab720
+\cf0 \
+\pard\pardeftab720
+
+\b \cf0 1.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 Add all of your site's contents using the following Git command:\
+\pard\pardeftab720
+
+\f2 \cf0 git add .\
+\pard\pardeftab720
+
+\f1 \cf0 \
+\pard\pardeftab720
+
+\b \cf0 2.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 Save your changes using Git's 
+\f2 commit
+\f1  command and the following commit message:\
+\pard\pardeftab720
+
+\f2 \cf0 git commit -m "Save my work"\
+\pard\pardeftab720
+\cf0 \
+
+\fs42 Deploying Website:\
+
+\fs30 \
+\pard\pardeftab720\sa240
+
+\f1 \cf0 It's time to deploy your site!\
+Once again, we'll use Git to help deploy your site. This time, we'll use Git's 
+\f2 push
+\f1  command and push the contents of your site up to your repo using the following command:\
+\pard\pardeftab720
+
+\f2 \cf0 git push -u origin master\
+\pard\pardeftab720
+
+\f1 \cf0 \
+\pard\pardeftab720
+
+\b \cf0 1.
+\b0 \
+\pard\pardeftab720\sa240
+\cf0 In the terminal, push the contents of your site to your repo. You can use the example above to help you.\
+Wait until the terminal stops outputting information. Once the terminal has stopped, continue to the next exercise.\
+\pard\pardeftab720\sa240
+
+\b \cf0 Note:
+\b0  You will be prompted to enter your GitHub credentials before you can push (i.e. username and password).\
+As you input your password, you'll notice that no text will be 
+\i visible
+\i0  as you type \'97 this is how all terminals work (as an added security measure). Be aware that although your password is not visible, the terminal is still accepting your input. Simply hit "Enter" on your keyboard after you are done typing your invisible password. If you typed it incorrectly, simply try again.\
+Finally, if you have two-factor authentication enabled for your GitHub account, this exercise will not pass for you. In that case, check out {\field{\*\fldinst{HYPERLINK "https://github.com/blog/1614-two-factor-authentication"}}{\fldrslt \cf3 \ul \ulc3 this resource}}.\
+\pard\pardeftab720\sa240
+\cf0 \'85Now your website is visible at username.github.io\
+Edit code through github.\
+\
+To re-publish website: edit _posts folder or run jekyll serve\
+}
