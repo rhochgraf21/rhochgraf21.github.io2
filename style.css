@@ -9,7 +9,6 @@ body{
 background-image: url("/water and rocks.jpg");
 color: white;
 padding: 350px;
-    padding-bottom: 250px;
 text-align: center;
 }
 #headbar h1 {
@@ -17,6 +16,9 @@ font-size: 64px;
 }
 #headbar p {
 font-size: 24px;
+}
+#headbar p,h1 {
+    padding-bottom: 300px;
 }
 
 #main {
