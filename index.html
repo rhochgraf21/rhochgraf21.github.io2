@@ -9,7 +9,9 @@
 		var j;
 function scrolling() {
 var myvar = setInterval(scroll1,50);
+	console.log("made it 1");
 	setTimeout(function() {clearInterval(myvar);,32500},
+		   console.log("made it 2");
 }
 		function scroll1() {
 		window.scrollBy(0,1);
