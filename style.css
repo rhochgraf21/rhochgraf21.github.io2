@@ -29,6 +29,7 @@ font-size: 24px;
     background-color: #00284d;
     color: white;
     margin: -10px;
+    overflow: scroll;
     }
 #main h1 {
     text-align: center;
