@@ -17,11 +17,14 @@ font-size: 64px;
 #headbar p {
 font-size: 24px;
 }
-#headbar p,h1 {
+#headbar p {
     position: relative;
     bottom: 250px;
 }
-
+#headbar h1 {
+    position: relative;
+    bottom: 250px;
+}
 #main {
     background-color: #2f1f96;
     color: white;
