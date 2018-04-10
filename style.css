@@ -5,8 +5,8 @@ body{
         padding-left: 25px;
         }
 @keyframes headbarvanish {
-    0%   {height: 615px;}
-    25%  {height: 500px;}
+    0%   {height: 415px;}
+    25%  {height: 300px;}
     50%  {height: 200px;}
     100% {height: 0px;}
 }
@@ -23,6 +23,7 @@ text-align: center;
 animation-name: headbarvanish;
 animation-duration: 4s;
 animation-delay: 3s;
+animation-fill-mode: forwards;
 }
 #headbar h1 {
 font-size: 64px;
