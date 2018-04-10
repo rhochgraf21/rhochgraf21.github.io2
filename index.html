@@ -8,10 +8,8 @@
 	<script>
 		var j;
 function scrolling() {
-	for(j = 0; j < 650; j++) {
-var myvar = setInterval(scroll1,500);
-	}
-	clearInterval(myvar);
+var myvar = setInterval(scroll1,50);
+	setTimeout(function() {clearInterval(myvar);,32500},
 }
 		function scroll1() {
 		window.scrollBy(0,1);
