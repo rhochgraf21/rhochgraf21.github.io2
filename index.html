@@ -6,12 +6,15 @@
     <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet">
 	<script>
+	function clearsInterval() {
+	    clearInterval(myvar);
+
+	    }
 		var j;
 function scrolling() {
-var myvar = setInterval(scroll1,50);
-	console.log("made it 1");
-	setTimeout(function() {clearInterval(myvar);,32500},
-		   console.log("made it 2");
+var myvar = setInterval(scroll1,5);
+	setTimeout(function() {clearInterval(myvar);},1800);
+		    window.scroll(1000);
 }
 		function scroll1() {
 		window.scrollBy(0,1);
@@ -19,7 +22,6 @@ var myvar = setInterval(scroll1,50);
 </script>
   <title>Robert Hochgraf</title>
 </head>
-
 <body onload = "setTimeout(scrolling,3000);">
 		<div id = "headbar">
 		<h1>Robert Hochgraf</h1>
