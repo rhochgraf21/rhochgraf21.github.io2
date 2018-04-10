@@ -4,7 +4,7 @@ body{
     body p,li,a,h2{
         padding-left: 25px;
         }
-@keyframes headbarvanish {
+@keyframes headbarvanish2 {
     0%   {height: 400px;margin-top:-50px}
     25%  {height: 250px;margin-top:-175px;}
     50%  {height: 100px;margin-top:-275px;
@@ -21,7 +21,8 @@ background-image: url("/water and rocks.jpg");
 color: white;
 padding: 200px;
 text-align: center;
-animation-name: headbarvanish;
+}
+#headbar a {animation-name: headbarvanish;
 animation-duration: 0.5s;
 animation-delay: 3s;
 animation-fill-mode: forwards;
