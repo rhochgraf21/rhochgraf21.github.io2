@@ -6,23 +6,19 @@
     <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet">
 	<script>
-function timing() {
-	window.scroll(0, 650);
+function scrolling() {
+	for(j = 0; j < 650; j++) {
+setTimeout(scroll1(),1);
+	}
 }
-		var x = 1; //y-axis pixel displacement
-var y = 1; //delay in milliseconds
-var z = 650; //number of iterations
-setInterval(function() {
-	while(z > 0) {
-		z--;
-    window.scroll(0, x);
-    x = x + 5; }//if you want to increase speed simply increase increment interval
-}, y);
+		function scroll1() {
+		window.scrollBy(0,1);
+		}
 </script>
   <title>Robert Hochgraf</title>
 </head>
 
-<body onload = "setInterval(timing,3000);">
+<body onload = "">
 		<div id = "headbar">
 		<h1>Robert Hochgraf</h1>
 		<p>Computer Whiz and Music Enthusiast</p>
