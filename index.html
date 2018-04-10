@@ -9,11 +9,20 @@
 function timing() {
 	window.scroll(0, 650);
 }
+		var x = 1; //y-axis pixel displacement
+var y = 1; //delay in milliseconds
+var z = 650; //number of iterations
+setInterval(function() {
+	while(z > 0) {
+		z--;
+    window.scroll(0, x);
+    x = x + 5; }//if you want to increase speed simply increase increment interval
+}, y);
 </script>
   <title>Robert Hochgraf</title>
 </head>
 
-<body onload = "setTimeout(timing,3000);">
+<body onload = "setInterval(timing,3000);">
 		<div id = "headbar">
 		<h1>Robert Hochgraf</h1>
 		<p>Computer Whiz and Music Enthusiast</p>
