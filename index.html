@@ -6,15 +6,22 @@
     <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet">
 	<script>
+		var hasScrolled;
+		window.addEventListener('scroll', function(evt) {hasScrolled=true;});
 	function clearsInterval() {
 	    clearInterval(myvar);
 
 	    }
 		var j;
 function scrolling() {
+if(!hasScrolled) {
 var myvar = setInterval(scroll1,5);
 	setTimeout(function() {clearInterval(myvar);},1600);
 		    window.scroll(1000);
+}
+	else {
+	
+	}
 }
 		function scroll1() {
 		window.scrollBy(0,2);
