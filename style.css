@@ -6,6 +6,7 @@ body{
         }
 #navbar {
 bottom: 20px;
+    position: fixed;
 }
 
 
