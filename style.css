@@ -5,7 +5,7 @@ body{
         padding-left: 25px;
         }
 #navbar {
-
+bottom: 20px;
 }
 
 
@@ -27,7 +27,9 @@ body{
 #navbar li {
     float: left;
 }
-
+#navbar li .l {
+float:right;
+}
 #navbar li a {
     display: block;
     color: white;
