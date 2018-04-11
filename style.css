@@ -7,14 +7,13 @@ body{
 #navbar {
 bottom: 20px;
     position: fixed;
+    display: invisible;
 }
 
+#navbar:hover {
+display:visible;
 
-
-
-
-
-
+}
 
 
 #navbar ul {
