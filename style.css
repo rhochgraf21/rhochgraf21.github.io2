@@ -12,10 +12,14 @@ body{
     margin-left: -5px;
 }
 
-#navbar:hover {
+#navbar:hover  {
 opacity:1;
     background-color: black;
 
+}
+#dropcont:hover #navbar {
+opacity:1;
+    background-color: black;
 }
 
 
