@@ -6,11 +6,11 @@ body{
         }
 #navbar {
     position: fixed;
-    display: hidden;
+    visibility: hidden;
 }
 
 #navbar:hover {
-display:visible;
+visibility:visible;
 
 }
 
