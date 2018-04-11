@@ -6,7 +6,7 @@ body{
         }
 #navbar {
     position: fixed;
-    display: invisible;
+    display: hidden;
 }
 
 #navbar:hover {
