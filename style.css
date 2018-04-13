@@ -83,6 +83,10 @@ float:right;
     background-color: red;
 }
 
+.navbar:hover {
+opacity: 1;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
