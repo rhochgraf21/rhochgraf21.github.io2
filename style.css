@@ -150,6 +150,10 @@ background-image: url("/water and rocks.jpg");
 color: white;
 padding: 200px;
 text-align: center;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 #headbar a {animation-name: headbarvanish;
 animation-duration: 0.5s;
