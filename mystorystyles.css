@@ -147,8 +147,7 @@ display:block;
 
 #headbar {
 background-image: url("/redtruck.png");
-height:80%;
-color: white;
+    height: 400px;
 padding: 200px;
 text-align: center;
 background-attachment: fixed;
@@ -163,17 +162,17 @@ animation-fill-mode: forwards;
 }
 #headbar h1 {
 font-size: 64px;
+    vertical-align: middle;
 }
 #headbar p {
 font-size: 24px;
 }
 #headbar p {
     position: relative;
-    bottom: 200px;
+    vertical-align: middle;
 }
 #headbar h1 {
     position: relative;
-    bottom: 200px;
 }
 #main {
     background-color: #00284d;
