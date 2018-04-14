@@ -147,6 +147,7 @@ display:block;
 
 #headbar {
 background-image: url("/redtruck.png");
+height:80%;
 color: white;
 padding: 200px;
 text-align: center;
