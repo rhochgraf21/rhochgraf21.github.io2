@@ -49,10 +49,29 @@ document.getElementById("|").innerHTML = "|";
   }
   else {
 	document.getElementById("|").innerHTML = "";
+	  	  blinkTypeWriter();
+
 	setTimeout(typeWriterErase,500,input);
 }
 }
-	
+
+function blinkTypeWriter() {
+setTimeout(function() {
+document.getElementById("|").innerHTML = "";
+},100);
+setTimeout(function() {
+document.getElementById("|").innerHTML = "|";
+},200);
+	setTimeout(function() {
+document.getElementById("|").innerHTML = "";
+},300);
+	setTimeout(function() {
+document.getElementById("|").innerHTML = "|";
+},400);
+setTimeout(function() {
+document.getElementById("|").innerHTML = "";
+},500);	
+}
 	
 function typeWriterErase(input) {
   if(i >= 0) {
