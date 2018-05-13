@@ -42,10 +42,13 @@ var iterationIndex = 0;
 function typeWriterWrite(input) {
   if (i < input.length) {
     document.getElementById("demo").innerHTML += input.charAt(i);
+document.getElementById("|").innerHTML = "|";
+
     i++;
     setTimeout(typeWriterWrite, speed, input);
   }
   else {
+	document.getElementById("|").innerHTML = "";
 	setTimeout(typeWriterErase,500,input);
 }
 }
@@ -56,6 +59,8 @@ function typeWriterErase(input) {
     var temp = document.getElementById("demo").innerHTML;
     var temp = setCharAt(temp,i,'');
     document.getElementById("demo").innerHTML = temp;
+	  document.getElementById("|").innerHTML = "|";
+
     i--;
     setTimeout(typeWriterErase, speed);
   }
@@ -114,7 +119,7 @@ iterationIndex = -1;
 		<div id = "headbar">
 			<div id = "small">
 				<h1>Robert Hochgraf</h1>
-				<p>&nbsp;<span id = "demo"></span></p>
+				<p>&nbsp;<span id = "demo"></span> <span id = "|"></span></p>
 			</div>
 		</div>
 	<div id="main">
