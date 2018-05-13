@@ -51,7 +51,7 @@ document.getElementById("|").innerHTML = "|";
 	document.getElementById("|").innerHTML = "";
 	  	  blinkTypeWriter();
 
-	setTimeout(typeWriterErase,500,input);
+	setTimeout(typeWriterErase,1000,input);
 }
 }
 
@@ -71,6 +71,21 @@ document.getElementById("|").innerHTML = "|";
 setTimeout(function() {
 document.getElementById("|").innerHTML = "&nbsp;";
 },500);	
+setTimeout(function() {
+document.getElementById("|").innerHTML = "&nbsp;";
+},600);
+setTimeout(function() {
+document.getElementById("|").innerHTML = "|";
+},700);
+	setTimeout(function() {
+document.getElementById("|").innerHTML = "&nbsp;";
+},800);
+	setTimeout(function() {
+document.getElementById("|").innerHTML = "|";
+},900);
+setTimeout(function() {
+document.getElementById("|").innerHTML = "&nbsp;";
+},1000);	
 }
 	
 function typeWriterErase(input) {
