@@ -32,25 +32,56 @@ var myvar = setInterval(scroll1,5);
 </script>
 	
 <script>
-var k = 0;
+var i = 0;
 var txt = 'Lorem ipsum dummy text blabla.';
 var speed = 50;
 var txtNoSpacesArray = txt.split(" ");
+var iterationIndex = 0;
 
-function typeWriter() {
-  if (k < txtNoSpacesArray.length) {
-    for(var j = 0; j < txtNoSpaces[k].length) {
-    document.getElementById("demo").innerHTML += txtNoSpaces[k].charAt(i);
-    }
-	  
-    k++;
-    setTimeout(typeWriter, speed);
+	
+function typeWriterWrite(input) {
+  if (i < input.length) {
+    document.getElementById("demo").innerHTML += input.charAt(i);
+    i++;
+    setTimeout(typeWriterWrite, speed, input);
   }
+  else {
+	setTimeout(typeWriterErase,500,input);
+}
+}
+	
+	
+function typeWriterErase(input) {
+  if(i >= 0) {
+    var temp = document.getElementById("demo").innerHTML;
+    var temp = setCharAt(temp,i,'');
+    document.getElementById("demo").innerHTML = temp;
+    i--;
+    setTimeout(typeWriterErase, speed);
+  }
+	else {i++; iterationIndex++; loopTypeWriter(iterationIndex);}
+}
+
+function setCharAt(str,index,chr) {
+    if(index > str.length-1) return str;
+    return str.substr(0,index) + chr + str.substr(index+1);
+}
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+function loopTypeWriter(iteration) {
+if(iteration == 0) {
+typeWriterWrite("Data Analist");
+}
+if(iteration == 1) {
+typeWriterWrite("Computer Scientist");
+iterationIndex = -1;
+}
 }
 </script>	
   <title>Robert Hochgraf</title>
 </head>
-<body onload = "setTimeout(scrolling,3000);">
+<body onload = "setTimeout(scrolling,3000); loopTypeWriter(0);">
 	
 <div class="navbar" id = "navbar">
   <a href="#home">Home</a>
@@ -84,10 +115,8 @@ function typeWriter() {
 			</div>
 		</div>
 	<div id="main">
-			<h1 id = "demo">Welcome!</h1>
-			<p>
-				Introduce here.
-    </p>		
+			<h1>Welcome!</h1>
+			<p id = "demo"></p>		
 		<hr>
 			<div class="project">
 				<div class="grid-subs">
