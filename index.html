@@ -52,7 +52,7 @@ function typeWriterWrite(input) {
 	
 	
 function typeWriterErase(input) {
-  if(i >= 0) {
+  if(i > 0) {
     var temp = document.getElementById("demo").innerHTML;
     var temp = setCharAt(temp,i,'');
     document.getElementById("demo").innerHTML = temp;
@@ -71,10 +71,10 @@ function sleep(ms) {
 }
 function loopTypeWriter(iteration) {
 if(iteration == 0) {
-typeWriterWrite("Data Analist");
+typeWriterWrite(" Data Analist");
 }
 if(iteration == 1) {
-typeWriterWrite("Computer Scientist");
+typeWriterWrite(" Computer Scientist");
 iterationIndex = -1;
 }
 }
