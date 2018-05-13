@@ -5,6 +5,9 @@
     <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet">
 	<script>
+		
+	//AUTO SCROLL	
+		
 		scroll1();
 		var hasScrolled;
 		window.addEventListener('scroll', function(evt) {hasScrolled=true;});
@@ -25,8 +28,26 @@ var myvar = setInterval(scroll1,5);
 }
 		function scroll1() {
 		window.scrollBy(0,2);
-		}
+		}		
 </script>
+	
+<script>
+var k = 0;
+var txt = 'Lorem ipsum dummy text blabla.';
+var speed = 50;
+var txtNoSpacesArray = txt.split(" ");
+
+function typeWriter() {
+  if (k < txtNoSpacesArray.length) {
+    for(var j = 0; j < txtNoSpaces[k].length) {
+    document.getElementById("demo").innerHTML += txtNoSpaces[k].charAt(i);
+    }
+	  
+    k++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>	
   <title>Robert Hochgraf</title>
 </head>
 <body onload = "setTimeout(scrolling,3000);">
@@ -63,7 +84,7 @@ var myvar = setInterval(scroll1,5);
 			</div>
 		</div>
 	<div id="main">
-			<h1>Welcome!</h1>
+			<h1 id = "demo">Welcome!</h1>
 			<p>
 				Introduce here.
     </p>		
