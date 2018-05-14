@@ -26,6 +26,80 @@ var myvar = setInterval(scroll1,5);
 		window.scrollBy(0,2);
 		}
 </script>
+	
+	
+	
+	
+	
+<script>
+var i = 0;
+var speed = 40;
+var iterationIndex = 0;
+	
+function typeWriterWrite(input) {
+  if (i < input.length) {
+    document.getElementById("demo").innerHTML += input.charAt(i);
+document.getElementById("|").innerHTML = "|";
+    i++;
+    setTimeout(typeWriterWrite, speed, input);
+  }
+  else {
+	document.getElementById("|").innerHTML = "";
+	  	  blinkTypeWriter();
+	setTimeout(typeWriterErase,1000,input);
+}
+}
+function blinkTypeWriter() {
+setTimeout(function() {
+document.getElementById("|").innerHTML = "&nbsp;";
+},100);
+	setTimeout(function() {
+document.getElementById("|").innerHTML = "|";
+},300);
+setTimeout(function() {
+document.getElementById("|").innerHTML = "&nbsp;";
+},500);	
+setTimeout(function() {
+document.getElementById("|").innerHTML = "|";
+},700);
+setTimeout(function() {
+document.getElementById("|").innerHTML = "&nbsp;";
+},900);	
+}
+	
+function typeWriterErase(input) {
+  if(i >= 0) {
+    var temp = document.getElementById("demo").innerHTML;
+    var temp = setCharAt(temp,i,'');
+    document.getElementById("demo").innerHTML = temp;
+	  document.getElementById("|").innerHTML = "|";
+    i--;
+    setTimeout(typeWriterErase, speed);
+  }
+	else {iterationIndex++; loopTypeWriter(iterationIndex);}
+}
+function setCharAt(str,index,chr) {
+    if(index > str.length-1) return str;
+    return str.substr(0,index) + chr + str.substr(index+1);
+}
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+function loopTypeWriter(iteration) {
+if(iteration == 0) {
+typeWriterWrite("Music is a language that doesn’t speak in particular words. It speaks in emotions, and if it’s in the bones, it’s in the bones. ― Keith Richards");
+}
+if(iteration == 1) {
+typeWriterWrite("“Where words fail, music speaks.” ― Hans Christian Andersen");
+}
+if(iteration == 2) {
+typeWriterWrite("There only 5 techniques to writing code. The sixth writes good code. -- Robert Hochgraf");
+iterationIndex = -1;
+}
+}
+</script>	
+	
+	
   <title>Robert Hochgraf</title>
 </head>
 <body onload = "setTimeout(scrolling,3000);">
@@ -58,12 +132,12 @@ var myvar = setInterval(scroll1,5);
 		<div id = "headbar">
 			<div id = "small">
 				<h1>Music</h1>
-				<p>
-“Music is a language that doesn’t speak in particular words. It speaks in emotions, and if it’s in the bones, it’s in the bones.” ― Keith Richards</p>
+				<p> &nbsp;<span id = "demo"></span> <span id = "|"></span>
+</p>
 			</div>
 		</div>
 	<div id="main">
-			<h1>“Where words fail, music speaks.” ― Hans Christian Andersen</h1>
+			<h1></h1>
 			<p>
 				
     </p>		
