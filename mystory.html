@@ -26,6 +26,77 @@ var myvar = setInterval(scroll1,5);
 		function scroll1() {
 		window.scrollBy(0,2);
 		}
+		
+		
+		
+<script>
+var i = 0;
+var speed = 50;
+var iterationIndex = 0;
+	
+function typeWriterWrite(input) {
+  if (i < input.length) {
+    document.getElementById("demo").innerHTML += input.charAt(i);
+document.getElementById("|").innerHTML = "|";
+    i++;
+    setTimeout(typeWriterWrite, speed, input);
+  }
+  else {
+	document.getElementById("|").innerHTML = "";
+	  	  blinkTypeWriter();
+	setTimeout(typeWriterErase,1000,input);
+}
+}
+function blinkTypeWriter() {
+setTimeout(function() {
+document.getElementById("|").innerHTML = "&nbsp;";
+},100);
+	setTimeout(function() {
+document.getElementById("|").innerHTML = "|";
+},300);
+setTimeout(function() {
+document.getElementById("|").innerHTML = "&nbsp;";
+},500);	
+setTimeout(function() {
+document.getElementById("|").innerHTML = "|";
+},700);
+setTimeout(function() {
+document.getElementById("|").innerHTML = "&nbsp;";
+},900);	
+}
+	
+function typeWriterErase(input) {
+  if(i >= 0) {
+    var temp = document.getElementById("demo").innerHTML;
+    var temp = setCharAt(temp,i,'');
+    document.getElementById("demo").innerHTML = temp;
+	  document.getElementById("|").innerHTML = "|";
+    i--;
+    setTimeout(typeWriterErase, speed);
+  }
+	else {iterationIndex++; loopTypeWriter(iterationIndex);}
+}
+function setCharAt(str,index,chr) {
+    if(index > str.length-1) return str;
+    return str.substr(0,index) + chr + str.substr(index+1);
+}
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+function loopTypeWriter(iteration) {
+if(iteration == 0) {
+typeWriterWrite("Life isn’t about finding yourself. Life is about creating yourself. --George Bernard Shaw");
+}
+if(iteration == 1) {
+typeWriterWrite("The best thing about a boolean is even if you are wrong, you are only off by a bit --Anonymous");
+}
+if(iteration == 2) {
+typeWriterWrite("There only 5 techniques to writing code. The sixth writes good code. -- Robert Hochgraf");
+iterationIndex = -1;
+}
+}
+</script>			
+		
 </script>
   <title>Robert Hochgraf</title>
 </head>
