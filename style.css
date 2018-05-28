@@ -1,5 +1,11 @@
 body{
     background-color: black;
+    background-imagelinear-gradient(to top, #30cfd0 0%, #330867 100%):;
+    background-image: linear-gradient(to top, #a80813 0%, #330867 100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
     body p,li,a,h2{
         padding-left: 25px;
@@ -19,6 +25,7 @@ body{
     -o-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
     transition: all 1s ease-out;
+    box-shadow: 2px 2px 2px white;
 }
 
 #navbar:hover  {
@@ -151,16 +158,7 @@ display:block;
 
 
 
-#headbar {
-background-image: url("/water and rocks.jpg");
-color: white;
-padding: 200px;
-text-align: center;
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-}
+#headbar {color: white;padding: 200px;margin-left: -15px;text-align: center;background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;margin-bottom: 300px;}
 #headbar a {animation-name: headbarvanish;
 animation-duration: 0.5s;
 animation-delay: 3s;
@@ -179,17 +177,29 @@ font-size: 64px;
     bottom: 200px;
 }
 #main {
-    background-color: white;
     color: white;
     margin: -10px;
-    background: #1f1c2c; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1f1c2c, #928dab); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1f1c2c, #928dab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     /* fallback for old browsers */
+     /* Chrome 10-25, Safari 5.1-6 */
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: -30px;
+      /* fallback for old browsers */
+      /* Chrome 10-25, Safari 5.1-6 */
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
+
+div#main {}
+
+div#main {}
 #main h1 {
     text-align: center;
     font-family: 'Hi Melody', cursive;
-    font-size: 48px;
+    font-size: 64px;
+    border: none;
+    color: rgba(255,255,255,1);
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-shadow: 2px 2px 129px;
     }
 #main p {
     font-family: 'Hi Melody', cursive;
@@ -211,4 +221,10 @@ font-size: 64px;
     -ms-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
     background-color:white;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }
