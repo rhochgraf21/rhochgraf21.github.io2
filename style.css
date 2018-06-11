@@ -249,3 +249,13 @@ div#main {}
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+.html {width: 30%;background-color: #4CAF50;margin-top: -20px;margin-left: 25px;}
+.css {width: 30%;background-color: #0740F1;margin-top: -20px;margin-left: 25px;}
+.JS {width: 30%;background-color: #4CAF50;margin-top: -20px;margin-left: 25px;}
+.PHP {width: 30%;background-color: #4CAF50;margin-top: -20px;margin-left: 25px;}
+.PHOTO {width: 30%;background-color: #4CAF50;margin-top: -20px;margin-left: 25px;}
+.JAVA {width: 30%;background-color: #4CAF50;margin-top: -20px;margin-left: 25px;}
+.MUSIC {width: 30%;background-color: #4CAF50;margin-top: -20px;margin-left: 25px;}
+.KARATE {width: 30%;background-color: #4CAF50;margin-top: -20px;margin-left: 25px;}
+.PIANO {width: 30%;background-color: #4CAF50;margin-top: -20px;margin-left: 25px;}
