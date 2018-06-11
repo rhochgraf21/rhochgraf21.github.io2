@@ -1,31 +1,30 @@
 body{
     background-color: black;
     background-imagelinear-gradient(to top, #30cfd0 0%, #330867 100%):;
-    background-image: linear-gradient(to top, #a80813 0%, #330867 100%);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     }
     body p,li,a,h2{
         padding-left: 25px;
         }
 #navbar {
     position: fixed;
-    opacity: 1;
+    opacity: 0.3;
     width: 100%;
     margin-top: -10px;
     margin-left: -7px;
     top: 10px;
     height: 50px;
-    background-color: white;
+    background-color: transparent;
     font-color: black;
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
     transition: all 1s ease-out;
-    box-shadow: 2px 2px 2px white;
 }
 
 #navbar:hover  {
@@ -93,12 +92,10 @@ float:right;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: black;
+    outline: black;
 }
 
-.navbar:hover {
-opacity: 1;
-}
+
 
 .dropdown-content {
     display: none;
@@ -214,7 +211,7 @@ div#main {}
     
 }
     
- #navbar:hover {
+ #navbaras {
     -webkit-transition: all 0.5s ease-in;
     -moz-transition: all 0.5s ease-in;
     -o-transition: all 0.5s ease-in;
@@ -227,4 +224,28 @@ div#main {}
     .parallax {
         background-attachment: scroll;
     }
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  padding-left: 23px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background: transparent; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 9px rgba(255,255,255,0.1);
+;
+  opacity:0.8;
+}
+
+.button:hover {background-color: transparent; opacity: 0.9;}
+
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
