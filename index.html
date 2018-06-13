@@ -11,7 +11,6 @@
 		window.addEventListener('scroll', function(evt) {hasScrolled=true;});
 	function clearsInterval() {
 	    clearInterval(myvar);
-
 	    }
 		var j; var amountScrolled=0;
 function scrolling(amount) {
@@ -31,41 +30,33 @@ var txt = 'Lorem ipsum dummy text blabla.';
 var speed = 50;
 var txtNoSpacesArray = txt.split(" ");
 var iterationIndex = 0;
-
 	
 function typeWriterWrite(input) {
   if (i < input.length) {
     document.getElementById("demo").innerHTML += input.charAt(i);
 document.getElementById("|").innerHTML = "|";
-
     i++;
     setTimeout(typeWriterWrite, speed, input);
   }
   else {
 	document.getElementById("|").innerHTML = "";
 	  	  blinkTypeWriter();
-
 	setTimeout(typeWriterErase,1000,input);
 }
 }
-
 function blinkTypeWriter() {
 setTimeout(function() {
 document.getElementById("|").innerHTML = "&nbsp;";
 },100);
-
 	setTimeout(function() {
 document.getElementById("|").innerHTML = "|";
 },300);
-
 setTimeout(function() {
 document.getElementById("|").innerHTML = "&nbsp;";
 },500);	
-
 setTimeout(function() {
 document.getElementById("|").innerHTML = "|";
 },700);
-
 setTimeout(function() {
 document.getElementById("|").innerHTML = "&nbsp;";
 },900);	
@@ -77,13 +68,11 @@ function typeWriterErase(input) {
     var temp = setCharAt(temp,i,'');
     document.getElementById("demo").innerHTML = temp;
 	  document.getElementById("|").innerHTML = "|";
-
     i--;
     setTimeout(typeWriterErase, speed);
   }
 	else {iterationIndex++; loopTypeWriter(iterationIndex);}
 }
-
 function setCharAt(str,index,chr) {
     if(index > str.length-1) return str;
     return str.substr(0,index) + chr + str.substr(index+1);
@@ -137,17 +126,17 @@ iterationIndex = -1;
 			<div id="small">
 				<h1>Robert Hochgraf</h1>
 				<p style="white-space: nowrap;text-align: center;margin-left: -100%;margin-right: -100%;text-align: center;">&nbsp;<span id="demo" style="
-">Computer Whiz </span> <span id="|">|</span></p>
+">Computer</span> <span id="|">|</span></p>
 
 <button class="button" style="" onclick="setHasScrolledFalse()">About Me</button>
 
 			</div>
 		</div>
 	<div id="main">
-			<h1 class="fadeIn">Welcome!</h1>
+			<h1>Welcome!</h1>
 			<p></p>		
 		<hr>
-			<div class="fadeIn">
+			<div class="project">
 				<div class="grid-subs">
 					<img src="img/spotlight.jpg">
 				</div>
@@ -161,12 +150,12 @@ iterationIndex = -1;
 	<hr>
 	
 		<div id="education">	
-			<h1 class="fadeIn">High School Freshman from Honeoye-Falls Lima</h1>
+			<h1>High School Freshman from Honeoye-Falls Lima</h1>
 		
 		
 		<hr>
 			
-		<div id="experience" class="fadeIn">
+		<div id="experience">
 				<div class="grid-subs">
 					<h2>Babysitting</h2>
 					<p>Late 2015-</p>
@@ -261,7 +250,6 @@ iterationIndex = -1;
 	
 
 
-<span class="gr__tooltip  gr__flipped" data-content="No definition found" style="opacity: 0; top: -9999px; left: 308px;"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle" style="margin-left: 49px;"></span></span>
-
+<span class="gr__tooltip  gr__flipped" data-content="No definition found" style="opacity: 0; top: -9999px; left: 919px;"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle" style="margin-left: 129.859px;"></span></span>
 
 </body></html>
